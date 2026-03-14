@@ -1,5 +1,11 @@
 # Block Blast Game + Reinforcement Learning AI Agent
 
+## Attribution
+
+This repository is based on the original [RisticDjordje/BlockBlast-Game-AI-Agent](https://github.com/RisticDjordje/BlockBlast-Game-AI-Agent) project and is maintained as a fork for continued development.
+
+The current fork keeps the original project structure and core implementation, while local development may add cleanup, tooling, documentation, and model-serving changes over time. Please refer to the upstream repository for the original source and project history.
+
 Block Blast is a Tetris-inspired puzzle game played on an 8×8 grid. At each turn, the player (or agent) is presented with three randomly generated block shapes and must choose one to place anywhere on the board. Whenever an entire row or column is filled, it clears and awards points; clearing multiple lines in succession activates a combo multiplier for even higher scores.
 
 Under the hood, the game engine guarantees that at least one of the three available shapes can always be placed, ensuring no unwinnable states arise prematurely. A Pygame-based interface lets humans play and test strategies interactively, while a custom OpenAI Gym environment exposes the game’s state, action space, and reward function for Reinforcement Learning.
